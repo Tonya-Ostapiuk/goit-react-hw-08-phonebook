@@ -1,16 +1,22 @@
-import { H1Styled, H2Styled } from './App.styled';
-import { ContactForm } from './ContactForm/ContactForm';
-import { ContactList } from './ContactList/ContactList';
-import { Filter } from './Filter/Filter';
+import React from 'react';
+import { Routes, Route } from 'react-router-dom';
+import { Layout } from './Layout/Layout';
+import { LogPage } from 'Pages/LogPage/LogPage';
+import { Navigation } from './Navigation/Navigation';
+import { RegistPage } from 'Pages/RegistPage/RegistPage';
+import { ContactsPage } from 'Pages/ContactPage/ContactsPage';
 
-export function App() {
+export const App = () => {
   return (
     <>
-      <H1Styled>Phonebook</H1Styled>
-      <ContactForm />
-      <H2Styled>Contacts</H2Styled>
-      <Filter />
-      <ContactList />
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Navigation />} />
+          <Route path='/login' element={<LogPage />} />
+          <Route path='/register' element={<RegistPage/>}/>
+          <Route path='/contacts'element={<ContactsPage/>}/>
+        </Route>
+      </Routes>
     </>
   );
 };
