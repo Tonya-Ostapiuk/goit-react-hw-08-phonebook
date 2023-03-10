@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { NavLink } from 'react-router-dom';
 
 export const NavLi = styled(NavLink)`
-  color: #009999;
+  color: whitesmoke;
   text-decoration: none;
   font-weight: 500;
   font-size: 15px;

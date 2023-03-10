@@ -3,9 +3,10 @@ import styled from 'styled-components';
 export const FormStyled = styled.form `
     display: flex;
     flex-direction: column;
+    background-color:#0b544a;
     width: 300px;
     height: 260px;
-    margin-left: 22px;
+    margin-left: 100px;
     border-style: solid;
     border-width: 1px;
     border-radius: 4px;
@@ -20,7 +21,7 @@ export const LabelStyled = styled.label `
   line-height: 1.71;
   margin-left: 20px;
   margin-top: 9px;
-  color: #0b544a;
+  color: whitesmoke;
  
 `
 export const InputStyled = styled.input `
@@ -51,7 +52,7 @@ export const BtnStyled = styled.button `
   justify-content: center;
   width: 120px;
   height: 25px;
-  margin-left: 75px;
+  margin-left: 84px;
   margin-top: 15px;
   border-style: solid;
   border-width: 1px;

@@ -6,6 +6,8 @@ font-size: 13px;
 line-height: 1.71;
 color: #0b544a;
 margin-bottom:10px;
+margin: 0.5em auto;
+margin-left: 110px
 `
 export const BtnStyled = styled.button `
   font-weight: 400;

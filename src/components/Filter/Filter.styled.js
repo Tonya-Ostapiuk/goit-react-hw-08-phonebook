@@ -6,7 +6,7 @@ export const DivStyled = styled.div `
 `
 
 export const InputStyled = styled.input `
-    width: 140px;
+    width: 200px;
     height: 20px;
   
     margin-left: 20px;
@@ -30,8 +30,8 @@ export const LabelStyled = styled.label `
   font-weight: 500;
   font-size: 14px;
   line-height: 1.71;
-  margin-left: 20px;
-  margin-top: 9px;
+  margin-left: 118px;
+  margin-top: 5px;
   color: #001a1a;
  
 `
