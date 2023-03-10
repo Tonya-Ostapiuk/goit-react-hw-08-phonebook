@@ -54,7 +54,7 @@ export const LogForm = () => {
       {/* <LabelStyled> */}
       {/* Password */}
         <InputStyled
-          type="tel"
+          type="password"
           name="password"
           required
           placeholder='Password'

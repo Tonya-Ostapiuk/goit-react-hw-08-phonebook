@@ -4,13 +4,14 @@ import { createSlice } from "@reduxjs/toolkit";
 import { registerUser } from "./LoginOperation";
 import { logInUser } from "./LoginOperation";
 import { logOut } from "./LoginOperation";
+import { fetchCurrentUser } from "./LoginOperation";
 
 const initialState = {
    
     user: { name:null, email:null },
     token:null,
     isLoggedIn:false,
- 
+    isRefreshed: false,
   }
 
 //   console.log(logInInitialState)
@@ -34,10 +35,17 @@ extraReducers: {
     state.isLoggedIn = true;
   },
   [logOut.fulfilled](state) {
-    state.user = { name: null, email: null };
-    state.token = null;
-    state.isLoggedIn = false;
+    // state.user = { name: null, email: null };
+    // state.token = null;
+    // state.isLoggedIn = false;
+    // state.isRefreshed = false;
+    return initialState
+    
   },
+  [fetchCurrentUser.fulfilled]: (state, {payload}) =>{
+    state.user = payload;
+    state.isRefreshed = true;
+  }
 
 },
 });
