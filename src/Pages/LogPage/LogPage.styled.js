@@ -7,7 +7,7 @@ export const H1Styled = styled.h1 `
   line-height: 1.71;
   margin-left: 20px;
   margin-top: 9px;
-  color: #0b544a;
+  color: #009999;
 `
 export const PageSection = styled.div`
 background-color:#f2fffa;
