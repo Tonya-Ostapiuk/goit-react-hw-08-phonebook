@@ -34,7 +34,7 @@ export const UlStyled = styled.ul`
 `;
 
 export const UserSt = styled.p `
-  color: #009999;
+  color:whitesmoke;
   text-decoration: none;
   font-weight: 500;
   font-size: 15px;

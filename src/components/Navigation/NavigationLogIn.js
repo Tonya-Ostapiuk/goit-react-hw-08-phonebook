@@ -14,7 +14,7 @@ export const NavigationLogIn = () => {
       <nav>
         <UlStyled>
           <li>
-            <UserSt>{userName}</UserSt>
+            <UserSt>Hello, {userName} ;)</UserSt>
           </li>
           <li>
             <NavLi onClick={() => dispatch(logOut())}>Logout</NavLi>
