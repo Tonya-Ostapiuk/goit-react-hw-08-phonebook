@@ -18,14 +18,14 @@ export const contactsSlice = createSlice({
     [fetchContacts.pending]: handlePending ,
     [fetchContacts.fulfilled]: (state, { payload }) => {
       state.status = 'fulfilled';
-      state.contacts.items = payload ;
+      state.contacts = payload ;
       state.error = null; 
     },
     [fetchContacts.rejected]: handleRejected,
     [addContacts.pending]: handlePending,
     [addContacts.fulfilled]: (state, { payload }) => {
       state.status = 'fulfilled';
-      state.contacts.items.push(payload);
+      state.contacts.push(payload);
       state.error = null;
     },
     [addContacts.rejected]: handleRejected,
@@ -33,7 +33,7 @@ export const contactsSlice = createSlice({
     [deleteContacts.fulfilled]: (state, { payload }) => {
       state.status = 'fulfilled';
       state.error = null; 
-      state.contacts.items = state.contacts.items.filter(contact => contact.id !== payload.id);
+      state.contacts.items = state.contacts.filter(contact => contact.id !== payload.id);
     },
     [deleteContacts.rejected]: handleRejected,
   },

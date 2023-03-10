@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { useDispatch } from 'react-redux';
 // import { authSelectors } from 'redux/Login/logInSelectos';
 import { FormStyled, InputStyled, BtnStyled } from './RegistForm.styled';
-import { register } from 'redux/Login/logInThunk';
+import { registerUser } from 'redux/Login/LoginOperation';
 
 export const RegistForm = () => {
   const dispatch = useDispatch();
@@ -28,7 +28,7 @@ export const RegistForm = () => {
 
   const handleSubmit = e => {
     e.preventDefault();
-    dispatch(register({ name, email, password }));
+    dispatch(registerUser({ name, email, password }));
     setName = ('');
     setEmail = ('');
     setPassword = ('');

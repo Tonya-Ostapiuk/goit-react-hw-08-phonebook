@@ -1,9 +1,9 @@
 export const contactInitialState = {
-  contacts: {
-    items: [],
+  
+    contacts: [],
+    filter: '',
     status: 'idle',
     error: null,
-  },
-  filter: "",
+  
   }
 

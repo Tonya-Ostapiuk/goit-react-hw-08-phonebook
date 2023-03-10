@@ -4,7 +4,7 @@ import { NavLi, UlStyled } from './Navigation.styled'
 
 export const Navigation = () => {
 return (
-    <header>
+    // <header>
     <nav>
         <UlStyled>
             <li>
@@ -17,7 +17,7 @@ return (
 
         </UlStyled>
     </nav>
-    </header>
+    // </header>
 
 )
 }
